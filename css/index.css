@@ -1,0 +1,63 @@
+body{
+    overflow: hidden;
+    background-color: rgb(94, 48, 104);
+
+}
+.box{
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  border: 1px solid rgb(250, 115, 250);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px pink;
+}
+.intro{
+  color: rgb(255, 119, 194);
+}
+.heart-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+h1:hover{
+    background-color: rgba(255, 56, 228, 0.829);
+    width: 44px;
+  
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 40px 10px rgb(245, 59, 214);
+    cursor: pointer;
+    padding: 0px;
+}
+.heart2 {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 10px;
+    height: 10px;
+    background-color: hsl(347, 100%, 50%);
+    
+    animation: beatHeart 1s infinite alternate ease-in-out;
+}
+  
+.heart {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    width: 10px;
+    height: 10px;
+    background-color: hsl(347, 100%, 50%);
+    
+    animation: beatHeart 1s infinite alternate ease-in-out;
+}
+  
+  @keyframes beatHeart {
+    from {
+      transform: scale(1) rotate(25deg);
+    }
+    to {
+      transform: scale(1.1) rotate(-55deg);
+    }
+  }
+  
